@@ -1,0 +1,97 @@
+// Colors
+$primary-color: #757727;
+$secondary-color: #A7AA37;
+$tertiary-color: #06214D;
+$background-color: #FBFCFF;
+$background-color-semi-opaque: rgba($color: $background-color, $alpha: 0.75);
+
+// Typography
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size: 6;
+$line-height: calc(1em * 1.25);
+
+$x-large-font: $base-font-size * 8;
+$large-font: $base-font-size * 5;
+$medium-font: $base-font-size * 4;
+$small-font: $base-font-size * 3;
+
+@mixin font-x-large {
+	font-size: #{$x-large-font}px;
+	color: $tertiary-color;
+	line-height: $line-height;
+}
+@mixin font-large {
+	font-size: #{$large-font}px;
+	line-height: $line-height;
+}
+@mixin font-medium {
+	font-size: #{$medium-font}px;
+	line-height: $line-height;
+}
+@mixin font-small {
+	font-size: #{$small-font}px;
+	line-height: $line-height;
+}
+
+
+// Sizes
+$min-width: 320px;
+$max-width: 1440px;
+$header-height: 96px;
+$logo-width: 200px;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+
+.page-container {
+	max-width: $max-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 4em;
+	padding-right: 4em;
+}
+
+// Buttons
+$btn-padding-top: 16px;
+$btn-padding-right: 24px;
+$btn-padding-bottom: 16px;
+$btn-padding-left: 24px;
+$btn-font-size: 16px;
+
+// Forms / inputs
+input {
+	font-size: 3em;
+	height: 4rem;
+	font-family: $base-font-family;
+}
+
+form {
+	button {
+		padding: 0;
+		border: none;
+	}
+}
+
+.app {
+    height: 100vh;
+    padding-top: 96px;
+    color: $primary-color;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+// Initialise
+body {
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-color: #FBFCFF;
+	font-size: #{$base-font-size}px;
+	* {
+		box-sizing: border-box;
+	}
+}
+
+
